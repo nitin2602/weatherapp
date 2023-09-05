@@ -18,22 +18,22 @@ async function getweath(city) {
   document.querySelector(".temp").innerHTML = `${Math.round(info.main.temp)}°C`;
   switch (info.weather[0].main) {
     case "Clouds":
-      cond.src = "/images/clouds.png";
+      cond.src = "./images/clouds.png";
       break;
     case "Clear":
-      cond.src = "/images/clear.png";
+      cond.src = "./images/clear.png";
       break;
     case "Rain":
-      cond.src = "/images/rain.png";
+      cond.src = "./images/rain.png";
       break;
     case "Mist":
-      cond.src = "/images/mist.png";
+      cond.src = "./images/mist.png";
       break;
     case "Snow":
-      cond.src = "/images/snow.png";
+      cond.src = "./images/snow.png";
       break;
     case "Haze":
-      cond.src = "/images/drizzle.png";
+      cond.src = "./images/drizzle.png";
       break;
     }
     if(aqiinfo.data[0].aqi<50){
